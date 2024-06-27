@@ -1,0 +1,30 @@
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Users List</h5>
+    <!-- Table Variants -->
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        @for(user of userList; track user.id){
+          <tr>
+            <th>{{user.id}}</th>
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.phone}}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+    <!-- End Table Variants -->
+
+  </div>
+</div>
